@@ -1,11 +1,11 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General body styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url('html1/home1.jpg');
@@ -13,7 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    position: relative; /* Added for overlay positioning */
+    position: relative; 
 }
 
 /* Overlay for all sections */
@@ -24,17 +24,17 @@ section::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Less opaque overlay */
-    z-index: 0; /* Set overlay behind content */
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0; 
 }
 
-/* Ensure content is above the overlay */
+
 header, .home, section, footer {
     position: relative;
     z-index: 1;
 }
 
-/* Header styles */
+
 header.active {
     position: fixed;
     top: 0;
@@ -53,25 +53,25 @@ header.active {
     font-weight: 600;
     margin-right: 300px;
     color: whitesmoke;
-    position: relative; /* Added for proper positioning */
+    position: relative;
 }
 
 .hi::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0; /* Changed from right to left */
-    width: 0; /* Initial width set to 0 for animation */
+    left: 0; 
+    width: 0; 
     height: 100%;
     background-color: #081b29;
     z-index: -1;
-    transition: width 1s ease; /* Smooth transition */
+    transition: width 1s ease; 
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
 
 .hi:hover::before {
-    width: 100%; /* Full width on hover */
+    width: 100%; 
 }
 
 .logo a {
@@ -84,7 +84,7 @@ header.active {
     transition: .3s;
 }
 
-/* Home section styles */
+
 .home {
     height: 100vh;
     width: 100%;
@@ -92,7 +92,7 @@ header.active {
     align-items: center;
     padding: 0 10%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
 }
 
@@ -112,18 +112,18 @@ header.active {
     content: '';
     position: absolute;
     top: 0;
-    left: 0; /* Changed from right to left */
-    width: 0; /* Initial width set to 0 for animation */
+    left: 0; 
+    width: 0; 
     height: 100%;
     background-color: #081b29;
     z-index: -1;
-    transition: width 1s ease; /* Smooth transition */
+    transition: width 1s ease; 
     animation: showRight 1s ease forwards;
     animation-delay: .7s;
 }
 
 .home h1:hover::before {
-    width: 100%; /* Full width on hover */
+    width: 100%; 
 }
 
 .home h3 {
@@ -165,7 +165,7 @@ header.active {
     transition: .5s;
 }
 
-/* "Hire Me" box styles */
+
 .box a:nth-child(1) {
     background-color: aqua;
     color: #081b29;
@@ -191,7 +191,6 @@ header.active {
     background-color: black;
 }
 
-/* "Let's Talk" box styles */
 .box a:nth-child(2) {
     background-color: transparent;
     color: whitesmoke;
@@ -203,7 +202,7 @@ header.active {
     color: #081b29;
 }
 
-/* Social icons styles */
+
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -252,11 +251,11 @@ header.active {
 
 section {
     padding: 60px 10%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     text-align: center;
-    margin: 20px 0; /* Add some spacing between sections */
-    border-radius: 10px; /* Rounded corners */
+    margin: 20px 0; 
+    border-radius: 10px; 
 }
 
 section h2 {
@@ -314,7 +313,7 @@ form button:hover {
     color: whitesmoke;
 }
 
-/* Footer styles */
+
 footer {
     background-color: #333;
     color: white;
